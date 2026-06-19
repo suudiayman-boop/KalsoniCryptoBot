@@ -1,75 +1,31 @@
-from telegram import Update
-from telegram.ext import (
-    Application,
-    CommandHandler,
-    MessageHandler,
-    ConversationHandler,
-    ContextTypes,
-    filters,
-)
+import os
+import discord
+from discord.ext import commands
+from openai import OpenAI
 
-TOKEN = "8997612253:AAEKi1LIdvJi7Q8N3tUJY6HXY3S_dUvPIj8"
+DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-NAME, NUMBER, GMAIL, PAYMENT = range(4)
+client = OpenAI(api_key=OPENAI_API_KEY)
 
-GROUP_ID = -1004319616995
+intents = discord.Intents.default()
+intents.message_content = True
 
-async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Magacaaga?")
-    return NAME
+bot = commands.Bot(command_prefix="!", intents=intents)
 
-async def get_name(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data["name"] = update.message.text
-    await update.message.reply_text("Number-kaaga?")
-    return NUMBER
+@bot.event
+async def on_ready():
+    print(f"{bot.user} is online!")
 
-async def get_number(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data["number"] = update.message.text
-    await update.message.reply_text("Gmail-kaaga?")
-    return GMAIL
-
-async def get_gmail(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    context.user_data["gmail"] = update.message.text
-    await update.message.reply_text("Soo dir sawirka Proof of Payment:")
-    return PAYMENT
-
-async def get_payment(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    photo = update.message.photo[-1].file_id
-
-    msg = f"""
-NEW REGISTRATION
-
-Name: {context.user_data['name']}
-Number: {context.user_data['number']}
-Gmail: {context.user_data['gmail']}
-"""
-
-    await context.bot.send_photo(
-        chat_id=GROUP_ID,
-        photo=photo,
-        caption=msg
+@bot.command()
+async def ai(ctx, *, question):
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "user", "content": question}
+        ]
     )
 
-    await update.message.reply_text(
-        "Waad ku mahadsan tahay. Xogtaada waa la gudbiyay."
-    )
+    await ctx.send(response.choices[0].message.content)
 
-    return ConversationHandler.END
-
-app = Application.builder().token(TOKEN).build()
-
-conv_handler = ConversationHandler(
-    entry_points=[CommandHandler("start", start)],
-    states={
-        NAME: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_name)],
-        NUMBER: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_number)],
-        GMAIL: [MessageHandler(filters.TEXT & ~filters.COMMAND, get_gmail)],
-        PAYMENT: [MessageHandler(filters.PHOTO, get_payment)],
-    },
-    fallbacks=[],
-)
-
-app.add_handler(conv_handler)
-
-print("Bot is running...")
-app.run_polling()
+bot.run(DISCORD_TOKEN)
