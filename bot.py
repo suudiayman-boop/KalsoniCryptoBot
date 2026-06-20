@@ -71,14 +71,7 @@ async def economic_calendar():
         "📅 Economic Calendar\n\nCPI Tomorrow 8:30 AM EST\nForecast: 3.1%"
     )
 
-scheduler.add_job(
-    market_news,
-    CronTrigger(
-        hour=21,
-        minute=16,
-        timezone="Africa/Nairobi"
-    )
-)
+
     
     scheduler.add_job(
         market_news,
