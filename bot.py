@@ -27,5 +27,18 @@ async def ai(ctx, *, question):
     )
 
     await ctx.send(response.choices[0].message.content)
+@bot.command()
+async def testnews(ctx):
+    channel = bot.get_channel(1459589952076779695)
+    await channel.send("📰 Market News test message")
 
+@bot.command()
+async def testcalendar(ctx):
+    channel = bot.get_channel(1517571243769860236)
+    await channel.send("📅 Economic Calendar test message")
+
+@bot.command()
+async def testrecap(ctx):
+    channel = bot.get_channel(1517565567614058506)
+    await channel.send("📊 Market Recap test message")
 bot.run(DISCORD_TOKEN)
