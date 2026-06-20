@@ -57,11 +57,10 @@ async def economic_calendar():
 scheduler.add_job(
     economic_calendar,
     CronTrigger(
-        hour=5,
-        minute=0,
+        hour=19,
+        minute=50,
         timezone="Africa/Nairobi"
     )
 )
-
 
 bot.run(DISCORD_TOKEN)
