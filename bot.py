@@ -54,7 +54,7 @@ scheduler = AsyncIOScheduler()
 async def economic_calendar():
     channel = bot.get_channel(1517571243769860236)
 
-  await channel.send(
+       await channel.send(
     "📅 Economic Calendar\n\nCPI Tomorrow 8:30 AM EST\nForecast: 3.1%"
 )
 scheduler.add_job(
