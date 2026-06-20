@@ -60,31 +60,12 @@ async def market_news():
 
         channel = bot.get_channel(1459589952076779695)
 
-       response = client.chat.completions.create(
+     response = client.chat.completions.create(
     model="gpt-4o-mini",
     messages=[
         {
             "role": "user",
-            "content": f"""
-News Title: {news.title}
-
-Sharax warkan.
-70% Somali.
-30% English.
-
-Qaabkan:
-
-🚨 MARKET NEWS
-
-War kooban
-
-📌 Saameynta:
-• Crypto:
-• Forex:
-• Stocks:
-
-Quick English:
-"""
+            "content": f"News Title: {news.title}. Sharax warkan 70% Somali 30% English. Sharax saameynta Crypto, Forex iyo Stocks."
         }
     ]
 )
