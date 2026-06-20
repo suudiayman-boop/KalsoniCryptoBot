@@ -5,6 +5,7 @@ from openai import OpenAI
 import requests
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+import feedparser
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
