@@ -18,6 +18,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
+    crypto_news.start()
     print(f"{bot.user} is online!")
 
 @bot.command()
@@ -46,6 +47,23 @@ async def testrecap(ctx):
     await channel.send("📊 Market Recap test message")
 
 
+from discord.ext import tasks
 
+RSS_FEEDS = [
+    "https://www.coindesk.com/arc/outboundfeeds/rss/",
+    "https://cointelegraph.com/rss",
+]
+
+@tasks.loop(minutes=15)
+async def crypto_news():
+    channel = bot.get_channel(1459589952076779695)
+
+    for feed_url in RSS_FEEDS:
+        feed = feedparser.parse(feed_url)
+
+        for entry in feed.entries[:3]:
+            await channel.send(
+                f"📰 {entry.title}\n{entry.link}"
+            )
 
 bot.run(DISCORD_TOKEN)
