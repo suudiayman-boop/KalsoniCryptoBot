@@ -63,7 +63,8 @@ async def market_news():
      await channel.send(
     f"📰 MARKET NEWS\n\n{news.title}\n\n{news.link}"
 )
-    async def economic_calendar():
+   
+async def economic_calendar():
         channel = bot.get_channel(1517571243769860236)
     
         await channel.send(
