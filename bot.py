@@ -60,17 +60,9 @@ async def market_news():
 
         channel = bot.get_channel(1459589952076779695)
 
-                response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "user",
-                "content": f"News Title: {news.title}. Sharax warkan 70% Somali 30% English. Sharax saameynta Crypto, Forex iyo Stocks."
-            }
-        ]
-    )
-    
-    await channel.send(response.choices[0].message.content)
+     await channel.send(
+    f"📰 MARKET NEWS\n\n{news.title}\n\n{news.link}"
+)
     async def economic_calendar():
         channel = bot.get_channel(1517571243769860236)
     
