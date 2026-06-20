@@ -5,6 +5,7 @@ from openai import OpenAI
 import requests
 import asyncio
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
+from apscheduler.triggers.cron import CronTrigger
 import feedparser
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -46,6 +47,6 @@ async def testrecap(ctx):
     await channel.send("📊 Market Recap test message")
 
 
-
+scheduler = AsyncIOScheduler()
 
 bot.run(DISCORD_TOKEN)
