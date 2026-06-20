@@ -21,6 +21,9 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
     print(f"{bot.user} is online!")
 
+    if not scheduler.running:
+        scheduler.start()
+
 @bot.command()
 async def ai(ctx, *, question):
     response = client.chat.completions.create(
