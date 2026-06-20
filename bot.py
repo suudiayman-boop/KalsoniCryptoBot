@@ -48,5 +48,5 @@ async def testrecap(ctx):
 
 
 scheduler = AsyncIOScheduler()
-scheduler.start()
+
 bot.run(DISCORD_TOKEN)
