@@ -2,3 +2,4 @@ discord.py
 openai
 apscheduler
 pytz
+requests
