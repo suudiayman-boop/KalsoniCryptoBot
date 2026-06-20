@@ -72,14 +72,13 @@ async def economic_calendar():
     )
 
 
-    
-    scheduler.add_job(
-        market_news,
-        CronTrigger(
-            hour=21,
-            minute=16,
-            timezone="Africa/Nairobi"
-        )
+scheduler.add_job(
+    market_news,
+    CronTrigger(
+        hour=21,
+        minute=16,
+        timezone="Africa/Nairobi"
     )
-    
-    bot.run(DISCORD_TOKEN)
+)
+
+bot.run(DISCORD_TOKEN)
