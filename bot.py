@@ -61,7 +61,7 @@ scheduler.add_job(
     economic_calendar,
     CronTrigger(
         hour=20,
-        minute=22,
+        minute=26,
         timezone="Africa/Nairobi"
     )
 )
