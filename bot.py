@@ -18,7 +18,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    crypto_news.start()
     print(f"{bot.user} is online!")
 
 @bot.command()
