@@ -44,8 +44,7 @@ async def testcalendar(ctx):
 async def testrecap(ctx):
     channel = bot.get_channel(1517565567614058506)
     await channel.send("📊 Market Recap test message")
-scheduler = AsyncIOScheduler(timezone="Africa/Mogadishu")
-scheduler.start()
+
 
 
 
