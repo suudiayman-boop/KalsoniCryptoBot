@@ -51,6 +51,18 @@ async def testrecap(ctx):
 
 
 scheduler = AsyncIOScheduler()
+
+async def market_news():
+    feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
+
+    if len(feed.entries) > 0:
+        news = feed.entries[0]
+
+        channel = bot.get_channel(1459589952076779695)
+
+        await channel.send(
+            f"📰 MARKET NEWS\n\n{news.title}\n\n{news.link}"
+        )
 async def economic_calendar():
     channel = bot.get_channel(1517571243769860236)
 
@@ -59,10 +71,10 @@ async def economic_calendar():
     )
 
 scheduler.add_job(
-    economic_calendar,
+    market_news,
     CronTrigger(
-        hour=20,
-        minute=58,
+        hour=21,
+        minute=16,
         timezone="Africa/Nairobi"
     )
 )
