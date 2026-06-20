@@ -58,9 +58,10 @@ scheduler.add_job(
     economic_calendar,
     CronTrigger(
         hour=19,
-        minute=50,
+        minute=55,
         timezone="Africa/Nairobi"
     )
 )
+scheduler.start()
 
 bot.run(DISCORD_TOKEN)
