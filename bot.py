@@ -2,7 +2,9 @@ import os
 import discord
 from discord.ext import commands
 from openai import OpenAI
-
+import requests
+import asyncio
+from apscheduler.schedulers.asyncio import AsyncIOScheduler
 DISCORD_TOKEN = os.getenv("DISCORD_TOKEN")
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
@@ -41,4 +43,8 @@ async def testcalendar(ctx):
 async def testrecap(ctx):
     channel = bot.get_channel(1517565567614058506)
     await channel.send("📊 Market Recap test message")
+
+
+
+
 bot.run(DISCORD_TOKEN)
