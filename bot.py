@@ -61,7 +61,8 @@ scheduler.add_job(
         minute=0,
         timezone="Africa/Nairobi"
     )
-）
+)
+scheduler.start()
 
 
 bot.run(DISCORD_TOKEN)
