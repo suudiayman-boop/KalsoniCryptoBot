@@ -48,5 +48,20 @@ async def testrecap(ctx):
 
 
 scheduler = AsyncIOScheduler()
+async def economic_calendar():
+    channel = bot.get_channel(1517571243769860236)
+
+    await channel.send(
+        "📅 Economic Calendar\n\nTani waa test Economic Calendar"
+    )
+scheduler.add_job(
+    economic_calendar,
+    CronTrigger(
+        hour=5,
+        minute=0,
+        timezone="Africa/Nairobi"
+    )
+
+
 
 bot.run(DISCORD_TOKEN)
