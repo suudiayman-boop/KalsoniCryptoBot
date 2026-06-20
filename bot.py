@@ -60,31 +60,31 @@ async def market_news():
 
         channel = bot.get_channel(1459589952076779695)
 
-     response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {
-            "role": "user",
-            "content": f"News Title: {news.title}. Sharax warkan 70% Somali 30% English. Sharax saameynta Crypto, Forex iyo Stocks."
-        }
-    ]
-)
-
-await channel.send(response.choices[0].message.content)
-async def economic_calendar():
-    channel = bot.get_channel(1517571243769860236)
-
-    await channel.send(
-        "📅 Economic Calendar\n\nCPI Tomorrow 8:30 AM EST\nForecast: 3.1%"
+                response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
+                "content": f"News Title: {news.title}. Sharax warkan 70% Somali 30% English. Sharax saameynta Crypto, Forex iyo Stocks."
+            }
+        ]
     )
-
-scheduler.add_job(
-    market_news,
-    CronTrigger(
-        hour=21,
-        minute=16,
-        timezone="Africa/Nairobi"
+    
+    await channel.send(response.choices[0].message.content)
+    async def economic_calendar():
+        channel = bot.get_channel(1517571243769860236)
+    
+        await channel.send(
+            "📅 Economic Calendar\n\nCPI Tomorrow 8:30 AM EST\nForecast: 3.1%"
+        )
+    
+    scheduler.add_job(
+        market_news,
+        CronTrigger(
+            hour=21,
+            minute=16,
+            timezone="Africa/Nairobi"
+        )
     )
-)
-
-bot.run(DISCORD_TOKEN)
+    
+    bot.run(DISCORD_TOKEN)
