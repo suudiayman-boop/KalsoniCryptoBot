@@ -45,6 +45,7 @@ async def testrecap(ctx):
     await channel.send("📊 Market Recap test message")
 
 
-
+scheduler = AsyncIOScheduler()
+scheduler.start()
 
 bot.run(DISCORD_TOKEN)
