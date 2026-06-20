@@ -60,8 +60,8 @@ async def economic_calendar():
 scheduler.add_job(
     economic_calendar,
     CronTrigger(
-        hour=19,
-        minute=58,
+        hour=20,
+        minute=22,
         timezone="Africa/Nairobi"
     )
 )
