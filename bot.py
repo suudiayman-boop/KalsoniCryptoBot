@@ -70,7 +70,13 @@ async def market_news():
             "crypto", "forex", "stock", "nasdaq",
             "dow", "s&p", "fed", "cpi", "inflation"
         ]
+if not any(word in news.title.lower() for word in keywords):
+    return
 
+if news.link == last_news_link:
+    return
+
+last_news_link = news.link
        
 
         response = client.chat.completions.create(
@@ -78,24 +84,32 @@ async def market_news():
             messages=[
                 {
                     "role": "user",
-                    "content": f"""
+                  "content": f"""
 Title: {news.title}
 
-Write:
+Write ONLY this format:
 
-Headline:
-One short Somali summary only.
+📰 Headline:
+(1 line)
 
-Impact:
 Crypto:
-Forex:
-Stocks:
+(1 line)
 
-Maximum 6 lines.
-70% Somali.
-30% English.
-No long explanation.
-"""
+Forex:
+(1 line)
+
+Stocks:
+(1 line)
+
+Rules:
+- Maximum 5 lines total
+- Very short
+- Somali 70%
+- English 30%
+- No explanation
+- No introduction
+- No conclusion
+""" 
                 }
             ]
         )
