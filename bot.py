@@ -71,12 +71,12 @@ async def market_news():
             "dow", "s&p", "fed", "cpi", "inflation"
         ]
 if not any(word in news.title.lower() for word in keywords):
-return
+            return
 
-if news.link == last_news_link:
-return
+        if news.link == last_news_link:
+            return
 
-last_news_link = news.link
+        last_news_link = news.link
 
 response = client.chat.completions.create(
     model="gpt-4o-mini",
