@@ -100,17 +100,19 @@ No long explanation.
 
         channel = bot.get_channel(1459589952076779695)
 
-        await channel.send(
-            f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
-        )
+print(channel)
+
+if channel is None:
+    print("CHANNEL NOT FOUND")
+    return
+
+await channel.send(
+    f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
+)
         
     
 
-        channel = bot.get_channel(1459589952076779695)
-
-        await channel.send(
-            f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
-        )
+        
 
 async def economic_calendar():
     channel = bot.get_channel(1517571243769860236)
