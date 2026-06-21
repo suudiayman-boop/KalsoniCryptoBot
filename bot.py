@@ -79,22 +79,16 @@ return
 last_news_link = news.link
 
 response = client.chat.completions.create(
-model="gpt-4o-mini",
-messages=[
-{
-"role": "user",
-"content": f"""
+    model="gpt-4o-mini",
+    messages=[
+        {
+            "role": "user",
+            "content": f"""
 Title: {news.title}
-"""
-}
-]
-)
-                  
-
 
 Write ONLY this format:
 
-📰 Headline:
+Headline:
 (1 line)
 
 Crypto:
@@ -114,11 +108,11 @@ Rules:
 - No explanation
 - No introduction
 - No conclusion
-""" 
-                }
-            ]
-        )
-
+"""
+        }
+    ]
+)
+                
         channel = bot.get_channel(1459589952076779695)
 
         print(channel)
