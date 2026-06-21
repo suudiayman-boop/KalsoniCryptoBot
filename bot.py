@@ -62,29 +62,31 @@ async def market_news():
 
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
-    if len(feed.entries) > 0:
-        news = feed.entries[0]
+    if len(feed.entries) == 0:
+        return
 
-        keywords = [
-            "bitcoin", "btc", "ethereum", "eth",
-            "crypto", "forex", "stock", "nasdaq",
-            "dow", "s&p", "fed", "cpi", "inflation"
-        ]
+    news = feed.entries[0]
 
-        if not any(word in news.title.lower() for word in keywords):
-            return
+    keywords = [
+        "bitcoin", "btc", "ethereum", "eth",
+        "crypto", "forex", "stock", "nasdaq",
+        "dow", "s&p", "fed", "cpi", "inflation"
+    ]
 
-        if news.link == last_news_link:
-            return
+    if not any(word in news.title.lower() for word in keywords):
+        return
 
-        last_news_link = news.link
+    if news.link == last_news_link:
+        return
 
-response = client.chat.completions.create(
-    model="gpt-4o-mini",
-    messages=[
-        {
-            "role": "user",
-            "content": f"""
+    last_news_link = news.link
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
+                "content": f"""
 Title: {news.title}
 
 Write ONLY this format:
@@ -110,21 +112,21 @@ Rules:
 - No introduction
 - No conclusion
 """
-        }
-    ]
-)
-                
-        channel = bot.get_channel(1459589952076779695)
+            }
+        ]
+    )
 
-        print(channel)
+    channel = bot.get_channel(1459589952076779695)
 
-        if channel is None:
-            print("CHANNEL NOT FOUND")
-            return
+    print(channel)
 
-        await channel.send(
-            f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
-        )
+    if channel is None:
+        print("CHANNEL NOT FOUND")
+        return
+
+    await channel.send(
+        f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
+    )
 
 scheduler.add_job(
     market_news,
