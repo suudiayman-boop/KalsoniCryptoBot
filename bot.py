@@ -61,17 +61,19 @@ async def market_news():
     global last_news_link
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
-    if len(feed.entries) > 0:
-        news = feed.entries[0]
-if news.link == last_news_link:
-            return
+   if len(feed.entries) > 0:
+    news = feed.entries[0]
 
-last_news_link = news.link
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {
-                    "role": "user",
+    if news.link == last_news_link:
+        return
+
+    last_news_link = news.link
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
                     "content": f"""
 Title: {news.title}
 
