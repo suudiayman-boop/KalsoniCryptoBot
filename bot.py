@@ -118,11 +118,8 @@ async def economic_calendar():
 
 scheduler.add_job(
     market_news,
-    CronTrigger(
-        hour=21,
-        minute=16,
-        timezone="Africa/Nairobi"
-    )
+    "interval",
+    minutes=5
 )
 @bot.event
 async def on_message(message):
