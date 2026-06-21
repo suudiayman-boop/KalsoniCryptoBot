@@ -65,7 +65,7 @@ async def market_news():
             model="gpt-4o-mini",
             messages=[
                 {
-                   {
+                   
     "role": "user",
     "content": f"""
 Title: {news.title}
