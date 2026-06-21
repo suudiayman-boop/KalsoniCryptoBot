@@ -62,7 +62,7 @@ async def market_news():
 
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
-    if len(feed.entries) > 0:
+   if len(feed.entries) > 0:
         news = feed.entries[0]
 
         keywords = [
@@ -70,7 +70,8 @@ async def market_news():
             "crypto", "forex", "stock", "nasdaq",
             "dow", "s&p", "fed", "cpi", "inflation"
         ]
-if not any(word in news.title.lower() for word in keywords):
+
+        if not any(word in news.title.lower() for word in keywords):
             return
 
         if news.link == last_news_link:
