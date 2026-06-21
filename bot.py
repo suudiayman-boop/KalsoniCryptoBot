@@ -67,22 +67,26 @@ async def market_news():
                 {
                     "role": "user",
                     "content": f"""
-News Title: {news.title}
+"content": f"""
+Title: {news.title}
 
-News Link: {news.link}
+Write:
 
-Sharax news-kan.
+📰 MARKET NEWS
 
-70% Somali
-30% English
+📌 Headline
 
-Kooban oo nadiif ah.
+🇸🇴 One short Somali summary only.
 
-Kadib sheeg:
+📈 Impact:
+Crypto:
+Forex:
+Stocks:
 
-Crypto Impact:
-Forex Impact:
-Stock Impact:
+Maximum 6 lines.
+70% Somali.
+30% English.
+No long explanation.
 """
                 }
             ]
