@@ -63,19 +63,28 @@ async def market_news():
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
     if len(feed.entries) > 0:
-        news = feed.entries[0]
+    news = feed.entries[0]
 
-        if news.link == last_news_link:
-            return
+    keywords = [
+        "bitcoin", "btc", "ethereum", "eth",
+        "crypto", "forex", "stock", "nasdaq",
+        "dow", "s&p", "fed", "cpi", "inflation"
+    ]
 
-        last_news_link = news.link
+    if not any(word in news.title.lower() for word in keywords):
+        return
 
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {
-                    "role": "user",
-                    "content": f"""
+    if news.link == last_news_link:
+        return
+
+    last_news_link = news.link
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
+                "content": f"""
 Title: {news.title}
 
 Write:
@@ -93,9 +102,9 @@ Maximum 6 lines.
 30% English.
 No long explanation.
 """
-                }
-            ]
-        )
+            }
+        ]
+    )
 
         channel = bot.get_channel(1459589952076779695)
 
