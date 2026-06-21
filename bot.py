@@ -60,14 +60,12 @@ async def market_news():
 
     if len(feed.entries) > 0:
         news = feed.entries[0]
-
-        response = client.chat.completions.create(
-            model="gpt-4o-mini",
-            messages=[
-                {
-                   
-    "role": "user",
-    "content": f"""
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {
+            "role": "user",
+            "content": f"""
 Title: {news.title}
 
 Write:
@@ -85,11 +83,9 @@ Maximum 6 lines.
 30% English.
 No long explanation.
 """
-}
-                }
-            ]
-        )
-
+        }
+    ]
+)
         channel = bot.get_channel(1459589952076779695)
 
         await channel.send(
