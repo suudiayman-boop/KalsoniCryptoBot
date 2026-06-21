@@ -90,7 +90,7 @@ Title: {news.title}
 ]
 )
                   
-Title: {news.title}
+
 
 Write ONLY this format:
 
