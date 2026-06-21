@@ -65,20 +65,17 @@ async def market_news():
             model="gpt-4o-mini",
             messages=[
                 {
-                    "role": "user",
-                    "content": f"""
-"content": f"""
+                   {
+    "role": "user",
+    "content": f"""
 Title: {news.title}
 
 Write:
 
-📰 MARKET NEWS
+Headline:
+One short Somali summary only.
 
-📌 Headline
-
-🇸🇴 One short Somali summary only.
-
-📈 Impact:
+Impact:
 Crypto:
 Forex:
 Stocks:
@@ -88,6 +85,7 @@ Maximum 6 lines.
 30% English.
 No long explanation.
 """
+}
                 }
             ]
         )
