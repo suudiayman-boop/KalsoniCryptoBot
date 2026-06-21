@@ -58,10 +58,37 @@ async def market_news():
     if len(feed.entries) > 0:
         news = feed.entries[0]
 
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"""
+News Title: {news.title}
+
+News Link: {news.link}
+
+Sharax news-kan.
+
+70% Somali
+30% English
+
+Kooban oo nadiif ah.
+
+Kadib sheeg:
+
+Crypto Impact:
+Forex Impact:
+Stock Impact:
+"""
+                }
+            ]
+        )
+
         channel = bot.get_channel(1459589952076779695)
 
         await channel.send(
-            f"📰 MARKET NEWS\n\n{news.title}\n\n{news.link}"
+            f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
         )
 
 async def economic_calendar():
