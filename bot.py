@@ -79,12 +79,12 @@ async def market_news():
 
         last_news_link = news.link
 
-    response = client.chat.completions.create(
-        
-        messages=[
-            {
-                "role": "user",
-                "content": f"""
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"""
 Title: {news.title}
 
 Write:
@@ -102,9 +102,9 @@ Maximum 6 lines.
 30% English.
 No long explanation.
 """
-            }
-        ]
-    )
+                }
+            ]
+        )
 
         channel = bot.get_channel(1459589952076779695)
 
@@ -117,13 +117,6 @@ No long explanation.
         await channel.send(
             f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
         )
-async def economic_calendar():
-    channel = bot.get_channel(1517571243769860236)
-
-    await channel.send(
-        "📅 Economic Calendar\n\nCPI Tomorrow 8:30 AM EST\nForecast: 3.1%"
-    )
-
 
 scheduler.add_job(
     market_news,
