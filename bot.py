@@ -62,7 +62,7 @@ async def market_news():
 
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
-   if len(feed.entries) > 0:
+    if len(feed.entries) > 0:
         news = feed.entries[0]
 
         keywords = [
