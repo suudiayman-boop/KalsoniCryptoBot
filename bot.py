@@ -48,7 +48,10 @@ async def testcalendar(ctx):
 async def testrecap(ctx):
     channel = bot.get_channel(1517565567614058506)
     await channel.send("📊 Market Recap test message")
-
+@bot.command()
+async def runnews(ctx):
+    await market_news()
+    await ctx.send("News sent!")
 
 scheduler = AsyncIOScheduler()
 
