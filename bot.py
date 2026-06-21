@@ -62,7 +62,7 @@ async def market_news():
 
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
-    if len(feed.entries) > 0:
+   if len(feed.entries) > 0:
     news = feed.entries[0]
 
     keywords = [
@@ -80,7 +80,7 @@ async def market_news():
     last_news_link = news.link
 
     response = client.chat.completions.create(
-        model="gpt-4o-mini",
+        
         messages=[
             {
                 "role": "user",
