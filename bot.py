@@ -80,5 +80,8 @@ scheduler.add_job(
         timezone="Africa/Nairobi"
     )
 )
-
+@bot.event
+async def on_message(message):
+    print(f"MESSAGE RECEIVED: {message.content}")
+    await bot.process_commands(message)
 bot.run(DISCORD_TOKEN)
