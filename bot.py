@@ -93,9 +93,9 @@ No long explanation.
         await channel.send(
             f"📰 MARKET NEWS\n\n{response.choices[0].message.content}"
         )
-        }
-    ]
-)
+        
+    
+
         channel = bot.get_channel(1459589952076779695)
 
         await channel.send(
