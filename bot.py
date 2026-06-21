@@ -17,6 +17,8 @@ intents.message_content = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
+last_news_link = ""
+
 @bot.event
 async def on_ready():
     print(f"{bot.user} is online!")
@@ -56,11 +58,15 @@ async def runnews(ctx):
 scheduler = AsyncIOScheduler()
 
 async def market_news():
+    global last_news_link
     feed = feedparser.parse("https://www.coindesk.com/arc/outboundfeeds/rss/")
 
     if len(feed.entries) > 0:
         news = feed.entries[0]
+if news.link == last_news_link:
+            return
 
+last_news_link = news.link
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
