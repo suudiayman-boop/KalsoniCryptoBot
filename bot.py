@@ -89,23 +89,35 @@ async def market_news():
               "content": f"""
 Title: {news.title}
 
-Write ONLY this format:
+Qor war kooban oo market news ah.
 
-Headline:
-(1 line)
+SHARCIYO:
+- 70% Somali, 30% English.
+- Qor xaqiiqooyinka news-ka kaliya.
+- Ha qorin ra'yi ama saadaal.
+- Ha isticmaalin erayo sida:
+  "laga yaabaa"
+  "dhici karta"
+  "may"
+  "might"
+  "could"
+  "possibly"
+- Haddii news-ku Crypto quseeyo qor Crypto.
+- Haddii news-ku Forex quseeyo qor Forex.
+- Haddii news-ku Stocks quseeyo qor Stocks.
+- Haddii qayb aysan quseyn ha ka tagin madhan.
+- Qor sida warbaahin rasmi ah.
+- Kooban oo si fudud loo fahmi karo.
 
-Crypto:
-(1 line)
+Format:
 
-Forex:
-(1 line)
+Headline: (1 line)
 
-Stocks:
-(1 line)
+Crypto: (1 line)
 
-Rules:
-...
-"""
+Forex: (1 line)
+
+Stocks: (1 line)
             }
         ]
     )
