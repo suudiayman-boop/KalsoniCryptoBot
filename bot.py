@@ -182,6 +182,11 @@ scheduler.add_job(
     CronTrigger(hour=20, minute=0)
 )
 
+@bot.command()
+async def runrecap(ctx):
+    await market_recap()
+    await ctx.send("Recap sent!")
+
 @bot.event
 async def on_message(message):
     print(f"MESSAGE RECEIVED: {message.content}")
