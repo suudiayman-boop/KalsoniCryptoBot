@@ -141,6 +141,47 @@ scheduler.add_job(
     "interval",
     minutes=5
 )
+
+async def market_recap():
+    channel = bot.get_channel(1517565567614058506)
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {
+                "role": "user",
+                "content": """
+Qor Market Recap maanta.
+
+Crypto:
+- Xaqiiqooyinka muhiimka ah oo keliya.
+
+Forex:
+- Xaqiiqooyinka muhiimka ah oo keliya.
+
+Stocks:
+- Xaqiiqooyinka muhiimka ah oo keliya.
+
+Qor Somali fudud.
+Ha qorin saadaal.
+Ha qorin "laga yaabaa".
+Ha qorin "may", "might", "could".
+Qor sida warbaahin rasmi ah.
+Kooban oo la fahmi karo.
+"""
+            }
+        ]
+    )
+
+    await channel.send(
+        f"📊 MARKET RECAP\n\n{response.choices[0].message.content}"
+    )
+
+scheduler.add_job(
+    market_recap,
+    CronTrigger(hour=20, minute=0)
+)
+
 @bot.event
 async def on_message(message):
     print(f"MESSAGE RECEIVED: {message.content}")
