@@ -142,50 +142,143 @@ scheduler.add_job(
     minutes=5
 )
 
-async def market_recap():
-    channel = bot.get_channel(1517565567614058506)
+async def daily_motivation():
+    channel = bot.get_channel(1291313497703186454)
 
     response = client.chat.completions.create(
         model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "user",
-                "content": """
-Qor Market Recap maanta.
+        messages=[{
+            "role": "user",
+            "content": """
+Qor Daily Motivation.
 
-Crypto:
-- Xaqiiqooyinka muhiimka ah oo keliya.
+Format:
 
-Forex:
-- Xaqiiqooyinka muhiimka ah oo keliya.
+🔥 DAILY MOTIVATION
 
-Stocks:
-- Xaqiiqooyinka muhiimka ah oo keliya.
+🇺🇸 English:
+(1 line)
 
-Qor Somali fudud.
-Ha qorin saadaal.
-Ha qorin "laga yaabaa".
-Ha qorin "may", "might", "could".
-Qor sida warbaahin rasmi ah.
-Kooban oo la fahmi karo.
+🇸🇴 Somali:
+(1 line)
+
+💪 (1 short line)
+
+Kooban.
+Xirfad leh.
 """
-            }
-        ]
+        }]
     )
 
-    await channel.send(
-        f"📊 MARKET RECAP\n\n{response.choices[0].message.content}"
+    await channel.send(response.choices[0].message.content)
+
+
+async def trading_tip():
+    channel = bot.get_channel(1517614584977035314)
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{
+            "role": "user",
+            "content": """
+Qor Trading Tip.
+
+Format:
+
+📈 TRADING TIP
+
+🇺🇸 English:
+(1 line)
+
+🇸🇴 Somali:
+(1 line)
+
+Kooban.
+Xirfad leh.
+"""
+        }]
     )
+
+    await channel.send(response.choices[0].message.content)
+
+
+async def risk_management():
+    channel = bot.get_channel(1517615207831306300)
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{
+            "role": "user",
+            "content": """
+Qor Risk Management Tip.
+
+Format:
+
+🛡️ RISK MANAGEMENT
+
+🇺🇸 English:
+(1 line)
+
+🇸🇴 Somali:
+(1 line)
+
+Kooban.
+Xirfad leh.
+"""
+        }]
+    )
+
+    await channel.send(response.choices[0].message.content)
+
+
+async def trading_psychology():
+    channel = bot.get_channel(1517615839745019964)
+
+    response = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{
+            "role": "user",
+            "content": """
+Qor Trading Psychology.
+
+Format:
+
+🧠 TRADING PSYCHOLOGY
+
+🇺🇸 English:
+(1 line)
+
+🇸🇴 Somali:
+(1 line)
+
+Kooban.
+Xirfad leh.
+"""
+        }]
+    )
+
+    await channel.send(response.choices[0].message.content)
+
 
 scheduler.add_job(
-    market_recap,
-    CronTrigger(hour=20, minute=0)
+    daily_motivation,
+    CronTrigger(hour=10, minute=0)
 )
 
-@bot.command()
-async def runrecap(ctx):
-    await market_recap()
-    await ctx.send("Recap sent!")
+scheduler.add_job(
+    risk_management,
+    CronTrigger(day_of_week="mon,tue", hour=11, minute=0)
+)
+
+scheduler.add_job(
+    trading_tip,
+    CronTrigger(day_of_week="wed,thu,fri", hour=12, minute=0)
+)
+
+scheduler.add_job(
+    trading_psychology,
+    CronTrigger(day_of_week="sat,sun", hour=13, minute=0)
+)
 
 @bot.event
 async def on_message(message):
