@@ -86,7 +86,7 @@ async def market_news():
         messages=[
             {
                 "role": "user",
-                "content": f"""
+              "content": f"""
 Title: {news.title}
 
 Write ONLY this format:
@@ -104,13 +104,7 @@ Stocks:
 (1 line)
 
 Rules:
-- Maximum 5 lines total
-- Very short
-- Somali 70%
-- English 30%
-- No explanation
-- No introduction
-- No conclusion
+...
 """
             }
         ]
