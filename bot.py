@@ -118,9 +118,11 @@ Crypto: (1 line)
 Forex: (1 line)
 
 Stocks: (1 line)
-            }
-        ]
-    )
+
+"""
+        }
+    ]
+)
 
     channel = bot.get_channel(1459589952076779695)
 
