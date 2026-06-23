@@ -93,55 +93,90 @@ Qor war kooban oo market news ah.
 
 SHARCIYO:
 
-- 90% Somali, 10% English kaliya.
-- Headline ku qor Somali.
-- Crypto ku qor Somali.
-- Forex ku qor Somali.
-- Stocks ku qor Somali.
-- Magacyada sida Bitcoin, Ethereum, ETF, Fed, SEC ha iska ahaadaan English.
+🚨 Qor sida warbaahin rasmi ah.
 
-- Qor xaqiiqooyinka news-ka kaliya.
-- Ha qorin ra'yi ama saadaal.
-- Ha isticmaalin erayo sida:
-  "laga yaabaa"
-  "dhici karta"
-  "may"
-  "might"
-  "could"
-  "possibly"
+🌍 Luqad:
+- 70% Somali.
+- 30% English.
+- Somali fudud oo qof walba fahmi karo.
+- Magacyada gaarka ah sida Bitcoin, Ethereum, ETF, SEC, Fed, BlackRock, Nasdaq, S&P 500 ha ku qornaadaan English.
 
-- Haddii news-ku Crypto quseeyo qor Crypto.
-- Haddii news-ku Forex quseeyo qor Forex.
-- Haddii news-ku Stocks quseeyo qor Stocks.
+📰 Xogta:
+- Qor kaliya xaqiiqooyinka ku jira news-ka.
+- Ha ku darin xog aan ku jirin news-ka.
+- Ha sameyn falanqayn.
+- Ha sameyn saadaal.
+- Ha sharxin sabab aan news-ku sheegin.
+- Ha qorin ra'yi adiga kuu gaar ah.
 
-- Haddii Forex news uusan jirin qor:
-  Forex: N/A
+❌ Ha isticmaalin:
+- laga yaabaa
+- dhici karta
+- mustaqbalka
+- may
+- might
+- could
+- possibly
+- likely
+- expected
+- probably
+- perhaps
 
-- Haddii Stocks news uusan jirin qor:
-  Stocks: N/A
+📌 Qaybaha:
+- Haddii news-ku Crypto quseeyo → Crypto qor.
+- Haddii news-ku Forex quseeyo → Forex qor.
+- Haddii news-ku Stocks quseeyo → Stocks qor.
 
-- Ha qorin:
-  "No notable updates"
-  "No significant information"
-  ama sharaxaad kale.
+- Haddii Forex news-ku ku jirin:
+Forex: N/A
 
-- Qor sida warbaahin rasmi ah.
-- Kooban oo si fudud loo fahmi karo.
+- Haddii Stocks news-ku ku jirin:
+Stocks: N/A
+
+- Haddii Crypto news-ku ku jirin:
+Crypto: N/A
+
+❌ Ha qorin:
+- No notable updates
+- No significant information
+- No information available
+- Major organizational reset
+- Market pressure
+- Investor sentiment
+- Economic implications
+
+🎨 Emoji:
+- Isticmaal 🚨 marka news-ku muhiim yahay.
+- Isticmaal 🪙 Crypto.
+- Isticmaal 💵 Forex.
+- Isticmaal 📈 Stocks.
+
+📝 Headline:
+- Headline-ka u beddel Somali kooban.
+- Ha soo celin headline-ka English haddii aan loo baahnayn.
+
+📏 Qaab:
+- Headline = 1 sadar.
+- Crypto = 1 sadar.
+- Forex = 1 sadar ama N/A.
+- Stocks = 1 sadar ama N/A.
+- Kooban oo nadiif ah.
 
 FORMAT:
+
+🚨 BREAKING MARKET NEWS
 
 Headline:
 (1 line)
 
-Crypto:
-(1 line)
+🪙 Crypto:
+(1 line ama N/A)
 
-Forex:
-N/A
+💵 Forex:
+(1 line ama N/A)
 
-Stocks:
-N/A
-
+📈 Stocks:
+(1 line ama N/A)
 """
         }
     ]
