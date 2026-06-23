@@ -92,7 +92,14 @@ Title: {news.title}
 Qor war kooban oo market news ah.
 
 SHARCIYO:
-- 70% Somali, 30% English.
+
+- 90% Somali, 10% English kaliya.
+- Headline ku qor Somali.
+- Crypto ku qor Somali.
+- Forex ku qor Somali.
+- Stocks ku qor Somali.
+- Magacyada sida Bitcoin, Ethereum, ETF, Fed, SEC ha iska ahaadaan English.
+
 - Qor xaqiiqooyinka news-ka kaliya.
 - Ha qorin ra'yi ama saadaal.
 - Ha isticmaalin erayo sida:
@@ -102,22 +109,38 @@ SHARCIYO:
   "might"
   "could"
   "possibly"
+
 - Haddii news-ku Crypto quseeyo qor Crypto.
 - Haddii news-ku Forex quseeyo qor Forex.
 - Haddii news-ku Stocks quseeyo qor Stocks.
-- Haddii qayb aysan quseyn ha ka tagin madhan.
+
+- Haddii Forex news uusan jirin qor:
+  Forex: N/A
+
+- Haddii Stocks news uusan jirin qor:
+  Stocks: N/A
+
+- Ha qorin:
+  "No notable updates"
+  "No significant information"
+  ama sharaxaad kale.
+
 - Qor sida warbaahin rasmi ah.
 - Kooban oo si fudud loo fahmi karo.
 
-Format:
+FORMAT:
 
-Headline: (1 line)
+Headline:
+(1 line)
 
-Crypto: (1 line)
+Crypto:
+(1 line)
 
-Forex: (1 line)
+Forex:
+N/A
 
-Stocks: (1 line)
+Stocks:
+N/A
 
 """
         }
