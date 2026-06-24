@@ -173,7 +173,7 @@ SHARCIYO:
 
 FORMAT:
 
-🚨 BREAKING MARKET NEWS
+🚨 BREAKING  NEWS
 
 Headline:
 (1 line)
