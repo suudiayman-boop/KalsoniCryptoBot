@@ -93,7 +93,55 @@ Qor war kooban oo market news ah.
 
 🚨 SHARCI GUUD
 
-Qor sida warbaahin rasmi ah. Isticmaal af Soomaali fudud, cad, oo dabiici ah. Qor kaliya xaqiiqooyinka ku jira news-ka. Ha ku darin fikrad, falanqayn, saadaal, talo, sabab, saameyn, ama xog aan news-ka ku jirin. Ha beddelin macnaha news-ka. Haddii news-ku English yahay, u turjun af Soomaali fudud adigoo ilaalinaya macnaha saxda ah. Ha koobiyeeyn news-ka eray eray; marka hore faham kadib ku qor af Soomaali fudud. Ha isticmaalin erayo adag ama aan news-ka ku jirin. Headline iyo dhammaan qaybaha hoose waa inay ka hadlaan isla news-ka keliya. Ha isku darin laba news oo kala duwan. Ha qorin wax aan si cad ugu jirin news-ka. Haddii Crypto, Forex, ama Stocks aan news-ka ku jirin, qor N/A. Haddii xog ku filan la waayo, qor N/A halkii aad xog cusub ka abuuri lahayd. Magacyada gaarka ah sida Bitcoin, Ethereum, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, iyo S&P 500 ha ku qornaadaan English.
+Qor sida warbaahin rasmi ah. Isticmaal af Soomaali fudud, cad, dabiici ah, oo qof walba fahmi karo.
+
+Qor kaliya xaqiiqooyinka ku jira news-ka. Ha ku darin fikrad, falanqayn, saadaal, talo, sabab, saameyn, ama xog aan news-ka ku jirin.
+
+Ha beddelin macnaha news-ka. Haddii news-ku English yahay, marka hore faham kadib ku qor af Soomaali fudud adigoo ilaalinaya macnaha saxda ah. Ha koobiyeeyn news-ka eray eray.
+
+Isticmaal erayo fudud oo caadi ah. Ha isticmaalin erayo adag ama aan news-ka ku jirin sida:
+
+- istiraatiijiyad
+- ku taliyay
+- u baahan yahay
+- laga yaabaa
+- falanqayn
+- aragti
+- market pressure
+- investor sentiment
+- economic implications
+
+Headline iyo dhammaan qaybaha hoose waa inay ka hadlaan isla news-ka keliya. Ha isku darin laba news oo kala duwan.
+
+Ha qorin xog cusub oo aan news-ka ku jirin.
+
+Haddii Crypto lagu sheegay news-ka:
+🪙 Crypto = xogta crypto
+
+Haddii Forex lagu sheegay news-ka:
+💵 Forex = xogta forex
+
+Haddii Stocks lagu sheegay news-ka:
+📈 Stocks = xogta stocks
+
+N/A qor kaliya marka qaybtaas aan gabi ahaanba lagu xusin news-ka.
+
+Ha qorin qiimaha Bitcoin, Ethereum, Forex, ama Stocks haddii news-ku uusan si cad uga hadlin.
+
+Magacyada gaarka ah sida Bitcoin, Ethereum, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, S&P 500, Trump, Michael Saylor, iyo CryptoQuant ha ku qornaadaan English.
+
+Qoraalku ha noqdo:
+
+- Kooban
+- Cad
+- Sax ah
+- Hal macne leh
+- Aan is khilaafin
+- Aan isku celcelin erayo
+
+MAR WALBA ISTICMAAL CINWAANKAN:
+
+🚨 WAR CUSUB
 
 FORMAT:
 
@@ -111,7 +159,7 @@ Headline:
 📈 Stocks:
 (1 sadar ama N/A)
 
-Qoraalku ha noqdo kooban, sax ah, nadiif ah, oo si fudud loo fahmi karo.
+Haddii xogta news-ka aan si cad loo fahmi karin ama aan ku filnayn, qor N/A halkii aad xog cusub ka abuuri lahayd.
 """
         }
     ]
