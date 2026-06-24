@@ -91,63 +91,44 @@ Title: {news.title}
 
 Qor war kooban oo market news ah.
 
-SHARCIYO GUUD
+🚨 QORAALKA WARARKA
 
-🚨 Qor sida warbaahin rasmi ah.
+- Isticmaal af Soomaali fudud oo dabiici ah.
+- Qor sida qof Soomaali ah uu war u sheegayo.
+- Ha isticmaalin erayo adag.
+- Ha isticmaalin erayo is khilaafaya.
+- Ha isticmaalin jumlado dhaadheer.
+- Qof walba ha fahmi karo marka uu akhriyo.
 
-🌍 Luqad:
-- 70% Somali.
-- 30% English.
-- Isticmaal af Soomaali fudud oo qof walba fahmi karo.
-- Ha isticmaalin erayo adag ama af warbaahineed culus.
-- U qor sida qof Soomaali ah uu dadka ugu sharxayo war cusub.
-- Haddii eray Soomaali ah uu adkaado, isticmaal English.
-- Magacyada gaarka ah sida Bitcoin, Ethereum, Solana, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, S&P 500 ha ku qornaadaan English.
+📰 XOGTA
 
-📰 Xogta:
-- Qor kaliya xaqiiqooyinka ku jira news-ka.
-- Ha ku darin xog aan news-ka ku jirin.
-- Ha sameyn falanqayn.
-- Ha sameyn saadaal.
-- Ha sharxin sabab aan news-ku sheegin.
-- Ha qorin ra'yi adiga kuu gaar ah.
+- Qor kaliya waxa news-ku sheegay.
+- Ha ku darin fikrad adiga kuu gaar ah.
+- Ha ku darin falanqayn.
+- Ha ku darin saadaal.
+- Ha ku darin sabab aan news-ku sheegin.
 - Ha beddelin macnaha news-ka.
 
-❌ Ha isticmaalin:
+❌ HA ISTICMAALIN
+
 - laga yaabaa
 - dhici karta
 - mustaqbalka
-- may
-- might
-- could
-- possibly
-- likely
-- expected
-- probably
-- perhaps
-
-❌ Ha isticmaalin ereyo adag:
+- u baahan yahay
+- ku taliyay
 - istiraatiijiyad
-- uruurin
+- falanqayn
+- aragti
 - cadaadis suuqa
 - saameyn dhaqaale
 - investor sentiment
 - market pressure
-- economic implications
-- major organizational reset
 
-❌ Ha qorin:
-- No notable updates
-- No significant information
-- No information available
+🗣️ AF SOOMAALI FUDUD
 
-🗣️ Qaabka Qoraalka:
-- Isticmaal jumlado gaaban.
-- Isticmaal af Soomaali caadi ah.
-- Qof 12 jir ah ha fahmi karo.
-- Marka jumlad la fududeyn karo, dooro tan ugu fudud.
+❌ Trump wuxuu sheegay in heshiiska nabadda ee Iran uu saameyn weyn ku yeelan karo dhaqaalaha caalamka.
 
-Tusaale:
+✅ Trump wuxuu sheegay in heshiiska Iran la gaaray, Strait of Hormuz-na dib loo furay.
 
 ❌ CryptoQuant ayaa ka hadashay istiraatiijiyadda Michael Saylor.
 
@@ -157,62 +138,33 @@ Tusaale:
 
 ✅ Bitcoin qiimihiisu hoos ayuu u dhacay.
 
-📌 Qaybaha:
-- Haddii news-ku Crypto quseeyo → Crypto qor.
-- Haddii news-ku Forex quseeyo → Forex qor.
-- Haddii news-ku Stocks quseeyo → Stocks qor.
+📌 QAACIDADA
 
-- Haddii Crypto news-ku ku jirin:
-Crypto: N/A
+- Hal fikrad = hal jumlad.
+- Hal jumlad = hal macne.
+- Qoraalka ha noqdo gaaban.
+- Qoraalka ha noqdo cad.
+- Qoraalka ha noqdo fudud.
 
-- Haddii Forex news-ku ku jirin:
-Forex: N/A
-
-- Haddii Stocks news-ku ku jirin:
-Stocks: N/A
-
-🎨 Emoji:
-- News muhiim ah → 🚨
-- Crypto → 🪙
-- Forex → 💵
-- Stocks → 📈
-
-📝 Headline:
-- Headline-ka u beddel Somali kooban.
-- Headline ha noqdo 1 sadar.
-- Ha soo celin headline-ka English haddii aan loo baahnayn.
-- Headline ha noqdo mid qof walba si degdeg ah u fahmi karo.
-
-🚨 MUHIIM:
-- Ha sameyn paraphrasing badan.
-- Ha qorin wax aan news-ku sheegin.
-- Haddii news-ku yiraahdo "Michael Saylor buys Bitcoin", qor:
-  "Michael Saylor ayaa iibsaday Bitcoin."
-- Haddii news-ku yiraahdo "Michael Saylor continues buying Bitcoin", qor:
-  "Michael Saylor ayaa sii iibsanaya Bitcoin."
-
-FORMAT:
-
-📰 MARKET NEWS
+FORMAT
 
 🚨 WAR CUSUB
 
 Headline:
-(1 line)
+(1 sadar)
 
 🪙 Crypto:
-(1 line ama N/A)
+(1 sadar ama N/A)
 
 💵 Forex:
-(1 line ama N/A)
+(1 sadar ama N/A)
 
 📈 Stocks:
-(1 line ama N/A)
+(1 sadar ama N/A)
 
-Kooban.
-Cad.
-Xaqiiqo kaliya.
-Af Soomaali fudud.
+Qor sida warbaahin rasmi ah.
+Qor af Soomaali fudud.
+Qor xaqiiqooyinka kaliya.
 """
         }
     ]
