@@ -329,17 +329,17 @@ Xirfad leh.
 
 scheduler.add_job(
     daily_motivation,
-    CronTrigger(hour=11, minute=28)
+    CronTrigger(hour=8, minute=30)
 )
 
 scheduler.add_job(
     risk_management,
-    CronTrigger(day_of_week="mon,tue", hour=11, minute=0)
+    CronTrigger(day_of_week="mon,tue", hour=12, minute=0)
 )
 
 scheduler.add_job(
     trading_tip,
-    CronTrigger(day_of_week="wed,thu,fri", hour=12, minute=0)
+    CronTrigger(day_of_week="wed,thu,fri", hour=5, minute=0)
 )
 
 scheduler.add_job(
