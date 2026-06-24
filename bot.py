@@ -91,80 +91,17 @@ Title: {news.title}
 
 Qor war kooban oo market news ah.
 
-🚨 QORAALKA WARARKA
-
-- Isticmaal af Soomaali fudud oo dabiici ah.
-- Qor sida qof Soomaali ah uu war u sheegayo.
-- Ha isticmaalin erayo adag.
-- Ha isticmaalin erayo is khilaafaya.
-- Ha isticmaalin jumlado dhaadheer.
-- Qof walba ha fahmi karo marka uu akhriyo.
-
-📰 XOGTA
-
-- Qor kaliya waxa news-ku sheegay.
-- Ha ku darin fikrad adiga kuu gaar ah.
-- Ha ku darin falanqayn.
-- Ha ku darin saadaal.
-- Ha ku darin sabab aan news-ku sheegin.
-- Ha beddelin macnaha news-ka.
-
-❌ HA ISTICMAALIN
-
-- laga yaabaa
-- dhici karta
-- mustaqbalka
-- u baahan yahay
-- ku taliyay
-- istiraatiijiyad
-- falanqayn
-- aragti
-- cadaadis suuqa
-- saameyn dhaqaale
-- investor sentiment
-- market pressure
-
-🗣️ AF SOOMAALI FUDUD
-
-❌ Trump wuxuu sheegay in heshiiska nabadda ee Iran uu saameyn weyn ku yeelan karo dhaqaalaha caalamka.
-
-✅ Trump wuxuu sheegay in heshiiska Iran la gaaray, Strait of Hormuz-na dib loo furay.
-
-❌ CryptoQuant ayaa ka hadashay istiraatiijiyadda Michael Saylor.
-
-✅ CryptoQuant ayaa sheegtay in Michael Saylor uu sii iibsanayo Bitcoin.
-
-❌ Bitcoin ayaa wajahaya cadaadis suuqa.
-
-✅ Bitcoin qiimihiisu hoos ayuu u dhacay.
-
-📌 QAACIDADA
-
-- Hal fikrad = hal jumlad.
-- Hal jumlad = hal macne.
-- Qoraalka ha noqdo gaaban.
-- Qoraalka ha noqdo cad.
-- Qoraalka ha noqdo fudud.
-
-FORMAT
-
+🚨 SHARCI GUUD
+Qor sida warbaahin rasmi ah. Isticmaal af Soomaali fudud oo dabiici ah oo qof walba fahmi karo. Qor kaliya xaqiiqooyinka ku jira news-ka. Ha ku darin fikrad, falanqayn, saadaal, talo, ama xog aan news-ka ku jirin. Ha beddelin macnaha news-ka. Haddii news-ku English yahay, u turjun af Soomaali fudud adigoo ilaalinaya macnaha saxda ah. Ha isticmaalin erayo adag ama ereyo aan news-ka ku jirin sida: istiraatiijiyad, u baahan yahay, ku taliyay, laga yaabaa, falanqayn, aragti, market pressure, investor sentiment, ama economic implications. Marka jumlad la fududeyn karo, dooro tan ugu fudud. Qor waxa news-ku sheegay oo keliya, sida uu yahay.
+Ha koobiyeeyn news-ka eray eray. Marka hore faham news-ka, kadib ku qor af Soomaali fudud adigoo ilaalinaya macnaha saxda ah.
+Magacyada gaarka ah sida Bitcoin, Ethereum, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, iyo S&P 500 ha ku qornaadaan English.
+Isticmaal qaabka:
 🚨 WAR CUSUB
-
-Headline:
-(1 sadar)
-
-🪙 Crypto:
-(1 sadar ama N/A)
-
-💵 Forex:
-(1 sadar ama N/A)
-
-📈 Stocks:
-(1 sadar ama N/A)
-
-Qor sida warbaahin rasmi ah.
-Qor af Soomaali fudud.
-Qor xaqiiqooyinka kaliya.
+Headline: (1 sadar)
+🪙 Crypto: (1 sadar ama N/A)
+💵 Forex: (1 sadar ama N/A)
+📈 Stocks: (1 sadar ama N/A)
+Qoraalku ha noqdo kooban, cad, sax ah, oo si fudud loo fahmi karo.
 """
         }
     ]
