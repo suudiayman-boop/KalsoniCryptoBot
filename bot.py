@@ -346,7 +346,10 @@ scheduler.add_job(
     trading_psychology,
     CronTrigger(day_of_week="sat,sun", hour=13, minute=0)
 )
-
+@bot.command()
+async def testmotivation(ctx):
+    await daily_motivation()
+    await ctx.send("Motivation sent!")
 @bot.event
 async def on_message(message):
     print(f"MESSAGE RECEIVED: {message.content}")
