@@ -92,16 +92,26 @@ Title: {news.title}
 Qor war kooban oo market news ah.
 
 🚨 SHARCI GUUD
-Qor sida warbaahin rasmi ah. Isticmaal af Soomaali fudud oo dabiici ah oo qof walba fahmi karo. Qor kaliya xaqiiqooyinka ku jira news-ka. Ha ku darin fikrad, falanqayn, saadaal, talo, ama xog aan news-ka ku jirin. Ha beddelin macnaha news-ka. Haddii news-ku English yahay, u turjun af Soomaali fudud adigoo ilaalinaya macnaha saxda ah. Ha isticmaalin erayo adag ama ereyo aan news-ka ku jirin sida: istiraatiijiyad, u baahan yahay, ku taliyay, laga yaabaa, falanqayn, aragti, market pressure, investor sentiment, ama economic implications. Marka jumlad la fududeyn karo, dooro tan ugu fudud. Qor waxa news-ku sheegay oo keliya, sida uu yahay.
-Ha koobiyeeyn news-ka eray eray. Marka hore faham news-ka, kadib ku qor af Soomaali fudud adigoo ilaalinaya macnaha saxda ah.
-Magacyada gaarka ah sida Bitcoin, Ethereum, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, iyo S&P 500 ha ku qornaadaan English.
-Isticmaal qaabka:
+
+Qor sida warbaahin rasmi ah. Isticmaal af Soomaali fudud, cad, oo dabiici ah. Qor kaliya xaqiiqooyinka ku jira news-ka. Ha ku darin fikrad, falanqayn, saadaal, talo, sabab, saameyn, ama xog aan news-ka ku jirin. Ha beddelin macnaha news-ka. Haddii news-ku English yahay, u turjun af Soomaali fudud adigoo ilaalinaya macnaha saxda ah. Ha koobiyeeyn news-ka eray eray; marka hore faham kadib ku qor af Soomaali fudud. Ha isticmaalin erayo adag ama aan news-ka ku jirin. Headline iyo dhammaan qaybaha hoose waa inay ka hadlaan isla news-ka keliya. Ha isku darin laba news oo kala duwan. Ha qorin wax aan si cad ugu jirin news-ka. Haddii Crypto, Forex, ama Stocks aan news-ka ku jirin, qor N/A. Haddii xog ku filan la waayo, qor N/A halkii aad xog cusub ka abuuri lahayd. Magacyada gaarka ah sida Bitcoin, Ethereum, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, iyo S&P 500 ha ku qornaadaan English.
+
+FORMAT:
+
 🚨 WAR CUSUB
-Headline: (1 sadar)
-🪙 Crypto: (1 sadar ama N/A)
-💵 Forex: (1 sadar ama N/A)
-📈 Stocks: (1 sadar ama N/A)
-Qoraalku ha noqdo kooban, cad, sax ah, oo si fudud loo fahmi karo.
+
+Headline:
+(1 sadar)
+
+🪙 Crypto:
+(1 sadar ama N/A)
+
+💵 Forex:
+(1 sadar ama N/A)
+
+📈 Stocks:
+(1 sadar ama N/A)
+
+Qoraalku ha noqdo kooban, sax ah, nadiif ah, oo si fudud loo fahmi karo.
 """
         }
     ]
