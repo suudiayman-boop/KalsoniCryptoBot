@@ -329,7 +329,7 @@ Xirfad leh.
 
 scheduler.add_job(
     daily_motivation,
-    CronTrigger(hour=10, minute=0)
+    CronTrigger(hour=11, minute=28)
 )
 
 scheduler.add_job(
