@@ -346,10 +346,27 @@ scheduler.add_job(
     trading_psychology,
     CronTrigger(day_of_week="sat,sun", hour=13, minute=0)
 )
+
 @bot.command()
 async def testmotivation(ctx):
     await daily_motivation()
     await ctx.send("Motivation sent!")
+
+@bot.command()
+async def testrisk(ctx):
+    await risk_management()
+    await ctx.send("Risk Management sent!")
+
+@bot.command()
+async def testtip(ctx):
+    await trading_tip()
+    await ctx.send("Trading Tip sent!")
+
+@bot.command()
+async def testpsychology(ctx):
+    await trading_psychology()
+    await ctx.send("Psychology sent!")
+
 @bot.event
 async def on_message(message):
     print(f"MESSAGE RECEIVED: {message.content}")
