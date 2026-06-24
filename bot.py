@@ -324,8 +324,9 @@ Xirfad leh.
         }]
     )
 
-    await channel.send(response.choices[0].message.content)
-
+    await channel.send(
+    f"@everyone\n\n{response.choices[0].message.content}"
+)
 
 scheduler.add_job(
     daily_motivation,
@@ -339,12 +340,12 @@ scheduler.add_job(
 
 scheduler.add_job(
     trading_tip,
-    CronTrigger(day_of_week="wed,thu,fri", hour=5, minute=0)
+    CronTrigger(day_of_week="wed,thu,fri", hour=13, minute=0)
 )
 
 scheduler.add_job(
     trading_psychology,
-    CronTrigger(day_of_week="sat,sun", hour=13, minute=0)
+    CronTrigger(day_of_week="sat,sun", hour=11, minute=0)
 )
 
 @bot.command()
