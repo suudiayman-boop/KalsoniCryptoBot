@@ -91,30 +91,29 @@ Title: {news.title}
 
 Qor war kooban oo market news ah.
 
-SHARCIYO:
+SHARCIYO GUUD
 
 🚨 Qor sida warbaahin rasmi ah.
 
 🌍 Luqad:
-
-- 70% Somali, 30% English.
-- Somali fudud oo la fahmi karo.
-- Magacyada gaarka ah sida Bitcoin, Ethereum, ETF, SEC, Fed, BlackRock, Nasdaq, S&P 500 ha ku qornaadaan English.
+- 70% Somali.
+- 30% English.
+- Isticmaal af Soomaali fudud oo qof walba fahmi karo.
+- Ha isticmaalin erayo adag ama af warbaahineed culus.
+- U qor sida qof Soomaali ah uu dadka ugu sharxayo war cusub.
+- Haddii eray Soomaali ah uu adkaado, isticmaal English.
+- Magacyada gaarka ah sida Bitcoin, Ethereum, Solana, XRP, ETF, SEC, Fed, BlackRock, Nasdaq, S&P 500 ha ku qornaadaan English.
 
 📰 Xogta:
-
 - Qor kaliya xaqiiqooyinka ku jira news-ka.
-- Jawaabtaadu ha ku salaysnaato kaliya title-ka iyo news-ka la siiyay.
-- Ha isticmaalin aqoon dibadeed ama xog kale.
 - Ha ku darin xog aan news-ka ku jirin.
-- Ha sameyn falanqayn, ra'yi, ama saadaal.
-- Ha sharxin sababta dhacdada haddii news-ku aanu sheegin.
-- Ha qorin saameynteeda haddii news-ku aanu sheegin.
-- Ha qorin natiijooyin mustaqbalka ah.
-- Ha qorin wax ka badan waxa news-ku xaqiijiyay.
+- Ha sameyn falanqayn.
+- Ha sameyn saadaal.
+- Ha sharxin sabab aan news-ku sheegin.
+- Ha qorin ra'yi adiga kuu gaar ah.
+- Ha beddelin macnaha news-ka.
 
 ❌ Ha isticmaalin:
-
 - laga yaabaa
 - dhici karta
 - mustaqbalka
@@ -127,53 +126,76 @@ SHARCIYO:
 - probably
 - perhaps
 
-❌ Ha qorin:
+❌ Ha isticmaalin ereyo adag:
+- istiraatiijiyad
+- uruurin
+- cadaadis suuqa
+- saameyn dhaqaale
+- investor sentiment
+- market pressure
+- economic implications
+- major organizational reset
 
+❌ Ha qorin:
 - No notable updates
 - No significant information
 - No information available
-- Major organizational reset
-- Market pressure
-- Investor sentiment
-- Economic implications
+
+🗣️ Qaabka Qoraalka:
+- Isticmaal jumlado gaaban.
+- Isticmaal af Soomaali caadi ah.
+- Qof 12 jir ah ha fahmi karo.
+- Marka jumlad la fududeyn karo, dooro tan ugu fudud.
+
+Tusaale:
+
+❌ CryptoQuant ayaa ka hadashay istiraatiijiyadda Michael Saylor.
+
+✅ CryptoQuant ayaa sheegtay in Michael Saylor uu sii iibsanayo Bitcoin.
+
+❌ Bitcoin ayaa wajahaya cadaadis suuqa.
+
+✅ Bitcoin qiimihiisu hoos ayuu u dhacay.
 
 📌 Qaybaha:
-
 - Haddii news-ku Crypto quseeyo → Crypto qor.
-
 - Haddii news-ku Forex quseeyo → Forex qor.
-
 - Haddii news-ku Stocks quseeyo → Stocks qor.
 
-- Haddii Crypto uusan ku jirin → Crypto: N/A
+- Haddii Crypto news-ku ku jirin:
+Crypto: N/A
 
-- Haddii Forex uusan ku jirin → Forex: N/A
+- Haddii Forex news-ku ku jirin:
+Forex: N/A
 
-- Haddii Stocks uusan ku jirin → Stocks: N/A
+- Haddii Stocks news-ku ku jirin:
+Stocks: N/A
 
 🎨 Emoji:
-
-- 🚨 = Breaking News
-- 🪙 = Crypto
-- 💵 = Forex
-- 📈 = Stocks
+- News muhiim ah → 🚨
+- Crypto → 🪙
+- Forex → 💵
+- Stocks → 📈
 
 📝 Headline:
-
 - Headline-ka u beddel Somali kooban.
+- Headline ha noqdo 1 sadar.
 - Ha soo celin headline-ka English haddii aan loo baahnayn.
+- Headline ha noqdo mid qof walba si degdeg ah u fahmi karo.
 
-📏 Qaab:
-
-- Headline = 1 sadar.
-- Crypto = 1 sadar ama N/A.
-- Forex = 1 sadar ama N/A.
-- Stocks = 1 sadar ama N/A.
-- Kooban, nadiif ah, oo si fudud loo fahmi karo.
+🚨 MUHIIM:
+- Ha sameyn paraphrasing badan.
+- Ha qorin wax aan news-ku sheegin.
+- Haddii news-ku yiraahdo "Michael Saylor buys Bitcoin", qor:
+  "Michael Saylor ayaa iibsaday Bitcoin."
+- Haddii news-ku yiraahdo "Michael Saylor continues buying Bitcoin", qor:
+  "Michael Saylor ayaa sii iibsanaya Bitcoin."
 
 FORMAT:
 
-🚨 BREAKING  NEWS
+📰 MARKET NEWS
+
+🚨 WAR CUSUB
 
 Headline:
 (1 line)
@@ -186,6 +208,11 @@ Headline:
 
 📈 Stocks:
 (1 line ama N/A)
+
+Kooban.
+Cad.
+Xaqiiqo kaliya.
+Af Soomaali fudud.
 """
         }
     ]
